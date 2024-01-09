@@ -48,7 +48,7 @@ public class BaseTest {
     @BeforeMethod
     public synchronized void startDriver(@Optional String browser){
        browser = System.getProperty("browser", browser);
-  //     if(browser == null) browser = "CHROME";
+   //   if(browser == null) browser = "CHROME";
  //       setDriver(new DriverManagerOriginal().initializeDriver(browser));
 //        setDriver(DriverManagerFactory.getManager(DriverType.valueOf(browser)).createDriver());
         setDriverManager(DriverManagerFactoryAbstract.
@@ -57,6 +57,7 @@ public class BaseTest {
         System.out.println("CURRENT THREAD: " + Thread.currentThread().getId() + ", " +
                 "DRIVER = " + getDriver());
     }
+
 
     @Parameters("browser")
     @AfterMethod

@@ -24,9 +24,9 @@
                 <configuration>
                     <parallel>methods</parallel>
                     <threadCount>6</threadCount>
-<!--                    <suiteXmlFiles>
+                    <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
-                    </suiteXmlFiles>-->
+                    </suiteXmlFiles>
                 </configuration>
             </plugin>
         </plugins>
